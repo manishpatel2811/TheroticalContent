@@ -37,7 +37,7 @@ Every  web service provides the service definition. Service definition consist o
 6. Service Definition - It consist of Request & response structure , request & response format and endpoint. 
 7. Transport - HTTP/Message queuing system.
 ```
-#  WEB SERVICE GROUPS
+#  WEB SERVICE GROUPS 
 ```
 # It defines end point , all operation allowed , request and response strucuture.
 
