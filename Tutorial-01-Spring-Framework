@@ -1,12 +1,15 @@
 # Spring Framework.
+
 ```
 Developer name - Rod Johnson
 Organization - Spring organization , pivotel
 Intial name - Interface 21 then -> Spring
 
 Spring came as a alternative for EJBs. 
+
 ```
 ## Feature of spring
+
 ```
 1. Platforms Dependency
 
@@ -82,6 +85,7 @@ Main asset of IOC = dependency injection , pass from xml file to pojo classes.
 Implemented by Runtie polymorphism.
 
 Tomcat comes up with servlet container then they will do the task.
+
 ```
 ## Example
 
@@ -90,5 +94,6 @@ Hello world
 1. pojo class -------- class test { public void hello(){ sop("hello")}}
 2. xml class  -------- SPRING xml FILE
 3. driver class ------ main method containing class
+
 ```
 
