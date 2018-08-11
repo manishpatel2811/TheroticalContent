@@ -39,24 +39,36 @@ If I implement all DAOs by a interface then if there is any needs to be implemen
 
 3. POJO - plain old java objects.
 
-No need to implement interfaces or extends class.
+In case of ejb in order create class we need to implement somthing but incase of sping we can do it by pojo classes.
 
-Spring recommending has-a replationship instead of extending class is-a .
 
-By using runtime and association - complete spring is implemented spring
+All layers can be implementes by pojo class.
 
-IOC - INVERSION OF CONTROL 
+We can use is-a or has-a relationship and implement pojo classes. In order to achieve loose coupling just We need to implement interfaces instead of extending class.
+
+** Spring recommending has-a replationship instead of extending class is-a .
+
+
+By using runtime and association (has-a)  - complete spring is implemented spring
+
+** To manage this pojo classes - we want to have container support.
+
+4. IOC - INVERSION OF CONTROL  - possibe because of containers.
 
 IOC - Read xml -> POJO classes providing has-a - possible by IOC
 Runtime polmorphism and HAS-A , make our layer light weight. 
 
 IOC 
+
 container --> core  - bean factory  I  -- XMLBeanFacotry C
           --> J2EE  - ApplicationContext   I  
                             | 
                       configurableApplicationContext - I
                             |
                       ClassPathXMLApplicationContext - C      
+
+By using IOC, MVC is build.
+
 MVC
 ----> WEB - WebApplicationContext   I
                      | 
@@ -80,9 +92,9 @@ manage life cycle of bean
 dynamic parameter pass to servlet class, init and context parameters.  [ Dependency Injection ]
 
 ==============================================================================
-Main asset of IOC = dependency injection , pass from xml file to pojo classes.
+Main asset of IOC = dependency injection [ pass from xml file to pojo classes ].
 ==============================================================================
-Implemented by Runtie polymorphism.
+Implemented by Runtime polymorphism - implementes DI.
 
 Tomcat comes up with servlet container then they will do the task.
 
@@ -95,5 +107,5 @@ Hello world
 2. xml class  -------- SPRING xml FILE
 3. driver class ------ main method containing class
 
-``` 
+```
 
