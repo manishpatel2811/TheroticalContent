@@ -93,4 +93,14 @@ using index you can randomly pass the values.
 <constructor-arg value="123" index="0"/>
 <constructor-arg value="12213" index="0"/>
 
-Latest value will get update. If you have secondry datatype instead of value put reference.
+Latest value will get update.
+
+If you have secondry datatype instead of value put reference tag.
+
+We can pass multiple values by list 
+<list>
+<value> manish1</value><value> manish2</value>
+</list>
+
+
+
