@@ -77,3 +77,20 @@ xml  -------> IOC ---|
                         
 1. default constructor & setter methods
 2. Parameterized constructor.
+
+
+Constructor arguments - constructor-arg value
+
+<constructor-arg value="123" type="int"/>
+<constructor-arg value="abc" type="String"/>
+<constructor-arg value="abc@email.com" type="String"/>
+
+
+using index you can randomly pass the values.
+
+<constructor-arg value="abc" index="1"/>
+<constructor-arg value="abc@email" index="2"/>
+<constructor-arg value="123" index="0"/>
+<constructor-arg value="12213" index="0"/>
+
+Latest value will get update. If you have secondry datatype instead of value put reference.
