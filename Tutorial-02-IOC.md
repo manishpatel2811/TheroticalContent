@@ -46,4 +46,34 @@ Reflection concept use inside it - IOC container to create classes.
   1. setter 
   2. constructor
   
-  
+ => Class can have any DI. We can take that data fom xml file from setter and constructor. It has listed here:-
+ 
+ Types of data
+ 
+  1. primitive 
+  2. secondry
+  3. primitive type array 
+  4. secondry arrays
+  5. collections 
+
+
+# Summary
+
+```
+IOC has container , they can able to create , instantiate pojo class , maanage life cycle of pjoj class.
+We can read data from spring xml files and supply to dependent class / pojo classes.
+
+1. Instantiate pojo class
+2. Life cycle managaement
+3. DI
+
+                        class test
+                        {
+                     |->   data;
+                     |       // setter methods or constructor. 
+                     |      
+                     |   }
+xml  -------> IOC ---| 
+                        
+1. default constructor & setter methods
+2. Parameterized constructor.
