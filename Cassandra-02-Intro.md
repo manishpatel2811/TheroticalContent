@@ -11,6 +11,9 @@ Cassandra is
 -> Linear scalability
 
 ```
+## Features 
+
+```
 1. Partitioning [Data distribution ]
 
 The architecture of Cassandra is “masterless”, meaning all nodes are the same
