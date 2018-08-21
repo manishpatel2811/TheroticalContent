@@ -2,9 +2,11 @@
 
 ```
 Apache Cassandra was developed at facebook by avinash lakshman and prashant malik. In 2009, It became a project in apache incubator.
+
 ```
 
 ```
+
 The CAP theorem, also known as Brewer's theorem, states that it is impossible for a distributed computer system to simultaneously provide all three of the following guarantees:
 
 * Consistency = (all nodes see the same data at the same time)
@@ -18,6 +20,7 @@ According to the theorm, a distributed system can't satisfy all three gurantees 
 ## Cassandra and CAP
 
 ```
+
 Cassandra is typically classified as an AP system, meaning that availability and partition tolerance are generally considered to be more important than consistency in Cassandra. But Cassandra can be tuned with replication factor and consistency level to also meet C.
 
 consistency as defined in the CAP theorem is quite different from the consistency guaranteed in ACID database transactions.
