@@ -28,3 +28,4 @@ The number of column keys is unbounded. In other words, you can have wide rows.
 A key can itself hold a value as part of the key name. In other words, you can have a valueless column.
 
 
+Links = http://www.bodhtree.com/blog/2013/12/06/my-experience-with-cassandra-concepts/
