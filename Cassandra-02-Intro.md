@@ -34,3 +34,4 @@ Cassandra supplies linear scalability, meaning that capacity may be easily added
 
 ```
 
+Reference links - https://docs.datastax.com/en/archived/cassandra/2.0/cassandra/gettingStartedCassandraIntro.html
