@@ -29,7 +29,7 @@ Cassandra also provides built-in and customizable replication, which stores redu
 3. Horizontal Scalability
 
 Cassandra supplies linear scalability, meaning that capacity may be easily added simply by adding new nodes online.
-
+ 
 4. Runs on any kind hardware, even in commodity hardware as well.
 
 ```
