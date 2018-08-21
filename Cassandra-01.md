@@ -1,6 +1,6 @@
 # Cassandra
 
-```
+``` 
 Apache Cassandra was developed at facebook by avinash lakshman and prashant malik. In 2009, It became a project in apache incubator.
 
 ```
