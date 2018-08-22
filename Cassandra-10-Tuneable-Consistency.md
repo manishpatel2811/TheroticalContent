@@ -113,3 +113,21 @@ Similar to TWO.
 
 ```
 
+## About QUORUM Level
+
+```
+The QUORUM level writes to the number of nodes that make up a quorum. A quorum is calculated, and then rounded down to a whole number, as follows:
+
+(sum_of_replication_factors / 2) + 1
+
+The sum of all the replication_factor settings for each data center is the sum_of_replication_factors.
+
+For example, in a single data center cluster using a replication factor of 3, a quorum is 2 nodes―the cluster can tolerate 1 replica nodes down. Using a replication factor of 6, a quorum is 4―the cluster can tolerate 2 replica nodes down. In a two data center cluster where each data center has a replication factor of 3, a quorum is 4 nodes―the cluster can tolerate 2 replica nodes down. In a five data center cluster where each data center has a replication factor of 3, a quorum is 8 nodes.
+
+If consistency is top priority, you can ensure that a read always reflects the most recent write by using the following formula:
+
+(nodes_written + nodes_read) > replication_factor
+
+For example, if your application is using the QUORUM consistency level for both write and read operations and you are using a replication factor of 3, then this ensures that 2 nodes are always written and 2 nodes are always read. The combination of nodes written and read (4) being greater than the replication factor (3) ensures strong read consistency.
+
+```
