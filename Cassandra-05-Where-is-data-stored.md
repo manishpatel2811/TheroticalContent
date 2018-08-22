@@ -64,4 +64,8 @@ You can configure two types of compaction to run periodically: SizeTieredCompact
 ```
 
 
+References 
+https://www.datastax.com/dev/blog/when-to-use-leveled-compaction
+https://www.datastax.com/dev/blog/leveled-compaction-in-apache-cassandra
+https://docs.datastax.com/en/archived/cassandra/2.0/cassandra/dml/dml_write_path_c.html
 
