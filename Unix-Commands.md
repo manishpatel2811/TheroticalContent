@@ -169,3 +169,87 @@ ls -a
            2   	      |			    	 2
 	    	   file or 
 		   terminal
+
+
+
+# Files 
+
+## file owner ,  permissions 
+
+Every process on the system runs as a particular user. Every file is owned by a particular user. Access of files are restricted by a user  
+
+
+ls - l - List of all files
+ps -a , ps -u - process related info.
+
+
+su - Switching between users.
+
+sudo - allow a normal user to be permitted to run a command as a root or any other user based on /et/sudoers files.
+
+visudo - edit the sudoers file
+
+useradd - add the user
+usermod - used to modify an user
+userdel - remove the user
+
+Access to files by users are controlled by file permissions.
+Files have three categories of user to which permissions apply.
+
+1. File is owned by a user the one who created it.
+2. File is also own a single group
+
+permissions of the file
+ 
+1. r  read = contents of the file can be read
+2. w  write = content of the file can be changed.
+3. x  execute =  file can be executed as command
+
+viewing file/ permission and ownership
+
+ls -l filename 
+
+
+## change file / directory permissions
+
+ chmod who what which file|directory
+
+who - u = user , g = group , o = other , a = all.
+what - + = add , - = remove , = > replace the permission
+which - r , w , x
+
+chmod ### file|directory
+
+
+ hash - sum => r =4 , w =2 x=1
+
+eg
+
+chmod go-rw file1
+
+chmod a+x file2
+
+chmod 750 sampledir
+
+for directory
+
+chmod -R g+rwx dir`
+
+
+## change the file directory user or group ownership
+
+chown user filename
+
+eg
+file
+chown student foofile
+
+directory
+chown -R student foodir
+
+
+
+
+
+
+
