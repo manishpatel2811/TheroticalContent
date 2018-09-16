@@ -251,5 +251,40 @@ chown -R student foodir
 
 
 
+# Process
+
+Running instance of a launched executable program. It consists of 
+• an address space of allocated memory.
+• security properties including ownership credentials and privileges.
+• one or more execution threads of program code.
+• process state
+
+The environment of a process.
+
+local and global variable
+current scheduling context.
+allocated system resources such as file desciptors and network ports
+
+an existing parent process dulicates its own address space (fork) to create a new child process structure. Every new process is assigned a unique process ID (PID) for tracking and secuirty.
+pid and parent process pid - element of new process env.
+all process are descendants of the first system process , which is systemd (1) .
+
+States 
+
+R - task_running
+S - Task Interruptible 
+D - Task_Uninterruptible
+K - Task Killable
+T - Task stopped 
+T - Task tracced
+Z - Zommbie
+X - Dead
+
+
+ps aux
+
+ps lax
+
+ps -ef
 
 
